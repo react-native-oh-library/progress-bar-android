@@ -15,11 +15,6 @@ protected:
         nativeProps.setProperty(rt, "color", "Color");
         return nativeProps;
     }
-//
-//    facebook::jsi::Object createBubblingEventTypes(facebook::jsi::Runtime &rt) override {
-//        return facebook::jsi::Object(rt);
-//    }
-//
 };
 
 } // namespace rnoh

@@ -28,6 +28,5 @@ public:
         {"RNCProgressBar", std::make_shared<ProgressBarAndroidComponentNapiBinder>()},
         };
     }
-    
 };
 } // namespace rnoh

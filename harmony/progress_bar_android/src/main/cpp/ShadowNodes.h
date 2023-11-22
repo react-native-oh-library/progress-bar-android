@@ -10,25 +10,20 @@
 
 #pragma once
 
-#include "EventEmitters.h"
 #include "Props.h"
-#include "States.h"
 #include <react/renderer/components/view/ConcreteViewShadowNode.h>
 #include <jsi/jsi.h>
 
 namespace facebook {
 namespace react {
 
-JSI_EXPORT extern const char RNCProgressBarComponentName[];
+JSI_EXPORT extern const char RNCProgressBarComponentName[] = "RNCProgressBar";
 
 /*
  * `ShadowNode` for <RNCProgressBar> component.
  */
 using RNCProgressBarShadowNode = ConcreteViewShadowNode<
     RNCProgressBarComponentName,
-    RNCProgressBarProps,
-    RNCProgressBarEventEmitter,
-    RNCProgressBarState>;
-
+    RNCProgressBarProps>;
 } // namespace react
 } // namespace facebook
