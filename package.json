@@ -1,6 +1,6 @@
 {
-  "name": "@react-native-community/progress-bar-android",
-  "version": "1.0.4",
+  "name": "@react-native-oh-library/progress-bar-android",
+  "version": "1.0.4-0.0.1",
   "description": "Progress Bar component for React Native",
   "main": "./js/index.js",
   "types": "./js/index.d.ts",
@@ -8,9 +8,13 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "test": "jest",
-    "lint": "eslint 'js/**/*.js' 'example/**/*.js'",
+    "lint": "npx eslint js",
+    "lint:fix": "npx eslint js --fix",
     "type-check": "tsc --noEmit",
     "flow": "flow"
+  },
+  "harmony": {
+    "alias": "@react-native-community/progress-bar-android"
   },
   "homepage": "https://github.com/react-native-community/react-native-progress-bar-android#readme",
   "repository": {
@@ -27,6 +31,7 @@
   "files": [
     "android",
     "ios",
+    "harmony",
     "js",
     "react-native-progress-bar-android.podspec",
     "react-native.config.js"
@@ -41,7 +46,6 @@
     "react": ">=16.8.6",
     "react-native": ">=0.60.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/runtime": "^7.10.3",
@@ -49,6 +53,7 @@
     "@types/react-native": "^0.62.2",
     "babel-jest": "^25.1.0",
     "eslint": "^7.12.1",
+    "eslint-plugin-react-native": "^4.1.0",
     "flow-bin": "^0.129.0",
     "jest": "^25.2.3",
     "metro-react-native-babel-preset": "0.63.0",
