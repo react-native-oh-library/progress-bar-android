@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-library/progress-bar-android",
-  "version": "1.0.4-0.0.2",
+  "version": "1.0.4-0.0.3",
   "description": "Progress Bar component for React Native",
   "main": "./js/index.js",
   "types": "./js/index.d.ts",
@@ -12,9 +12,6 @@
     "lint:fix": "npx eslint js --fix",
     "type-check": "tsc --noEmit",
     "flow": "flow"
-  },
-  "harmony": {
-    "alias": "@react-native-community/progress-bar-android"
   },
   "homepage": "https://github.com/react-native-community/react-native-progress-bar-android#readme",
   "repository": {
