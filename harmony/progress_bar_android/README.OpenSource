@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "progress-bar-amdroid-harmony",
+        "License": "MIT License",
+        "License File":"https://github.com/react-native-progress-view/progress-bar-android/blob/master/README.md",
+        "Version Number": "1.0.4",
+        "Owner" : ""
+        "Upstream URL": "https://github.com/react-native-progress-view/progress-bar-android",
+        "Description": "A React Native module that allows you to view percentage progress."
+    }
+]
