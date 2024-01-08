@@ -4,6 +4,9 @@
   "description": "Progress Bar component for React Native",
   "main": "./js/index.js",
   "types": "./js/index.d.ts",
+  "harmony": {
+    "alias": "@react-native-community/progress-bar-android"
+  },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
@@ -42,6 +45,9 @@
   "peerDependencies": {
     "react": ">=16.8.6",
     "react-native": ">=0.60.0"
+  },
+  "dependencies": {
+    "@react-native-community/progress-bar-android": "1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
