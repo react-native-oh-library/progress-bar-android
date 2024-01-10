@@ -1,6 +1,6 @@
 {
-  "name": "@react-native-oh-library/progress-bar-android",
-  "version": "1.0.4-0.0.3",
+  "name": "@react-native-oh-tpl/progress-bar-android",
+  "version": "1.0.4-0.0.4",
   "description": "Progress Bar component for React Native",
   "main": "./js/index.js",
   "types": "./js/index.d.ts",
