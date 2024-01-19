@@ -6,7 +6,7 @@
   "main": "Index.ets",
   "version": "1.0.0",
   "dependencies": {
-    "@ohos/materialprogressbar": "^2.0.2"
+    "@ohos/materialprogressbar": "^2.0.3-rc.0"
   },
   "devDependencies": {
     "rnoh": "file:../rnoh"
