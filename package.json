@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/progress-bar-android",
-  "version": "1.0.4-0.0.4",
+  "version": "1.0.4-0.0.6",
   "description": "Progress Bar component for React Native",
   "main": "./js/index.js",
   "types": "./js/index.d.ts",
@@ -29,8 +29,6 @@
     "progress-bar"
   ],
   "files": [
-    "android",
-    "ios",
     "harmony",
     "js",
     "react-native-progress-bar-android.podspec",
