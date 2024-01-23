@@ -23,8 +23,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#ifndef SHADOWNODES_H
-#define SHADOWNODES_H
+#ifndef SHADOWNODES_H_PROGRESS_BAR
+#define SHADOWNODES_H_PROGRESS_BAR
 #pragma once
 
 #include <react/renderer/components/view/ConcreteViewShadowNode.h>
