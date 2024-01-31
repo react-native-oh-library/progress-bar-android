@@ -4,12 +4,12 @@
   "name": "progress_bar_android",
   "description": "Please describe the basic information.",
   "main": "Index.ets",
-  "version": "1.0.0",
+  "version": "1.0.4-0.0.7",
   "dependencies": {
-    "@ohos/materialprogressbar": "^2.0.3-rc.0"
+    "@ohos/materialprogressbar": "^2.0.3-rc.0",
+    "rnoh": "file:../rnoh"
   },
   "devDependencies": {
-    "rnoh": "file:../rnoh"
   },
   "compileOnlyDependencies": {}
 }
