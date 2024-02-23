@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/progress-bar-android",
-  "version": "1.0.4-0.0.7",
+  "version": "1.0.4-0.0.8",
   "description": "Progress Bar component for React Native",
   "main": "./js/index.js",
   "types": "./js/index.d.ts",
@@ -68,13 +68,5 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  },
-  "codegenConfig": {
-    "name": "rnandroidprogressbar",
-    "type": "components",
-    "jsSrcsDir": "./js",
-    "android": {
-      "javaPackageName": "com.reactnativecommunity.androidprogressbar"
-    }
   }
 }
