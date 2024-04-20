@@ -33,7 +33,7 @@ import {
     ColorSegments,
     convertColorSegmentsToString,
     RNScrollViewManager
-} from 'rnoh'
+} from '@rnoh/react-native-openharmony'
 import  {ComWheel,Model} from './ComWheel'
 import {
     MaterialProgressBar,
