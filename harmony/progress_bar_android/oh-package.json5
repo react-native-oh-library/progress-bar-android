@@ -1,13 +1,13 @@
 {
   "license": "Apache-2.0",
   "author": "",
-  "name": "progress_bar_android",
+  "name": "@react-native-oh-tpl/progress-bar-android",
   "description": "Please describe the basic information.",
   "main": "Index.ets",
-  "version": "1.0.4-0.0.7",
+  "version": "1.0.4-0.0.9",
   "dependencies": {
     "@ohos/materialprogressbar": "^2.0.3-rc.0",
-    "rnoh": "file:../rnoh"
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
   },
   "devDependencies": {
   },
