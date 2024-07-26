@@ -39,7 +39,6 @@ import type {ProgressBarAndroidProps} from './types';
 const ProgressBarAndroid = (
   props: ProgressBarAndroidProps,
   forwardedRef: ?React.Ref<typeof ProgressBarAndroidNativeComponent>,
-  style: any,
 ) => {
   const attrHeight = {
     Horizontal: 16,
