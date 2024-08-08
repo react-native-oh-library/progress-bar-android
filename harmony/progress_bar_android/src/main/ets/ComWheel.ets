@@ -1,4 +1,3 @@
-
 /**
  * MIT License
  *
@@ -28,24 +27,26 @@ export struct ComWheel {
   @Link public model: Model;
 
   build() {
-    Column(){
-      Stack() {
-        Path()
-          .strokeWidth(this.model.barWidth)
-          .fillOpacity(0)
-          .stroke(this.model.barColor)
-          .commands(this.model.svgPath)
-          .width(this.model.circleRadius/3*2)
-          .height(this.model.circleRadius/3*2)
-          .zIndex(2)
-        Path()
-          .strokeWidth(this.model.rimWidth)
-          .fillOpacity(0)
-          .stroke(this.model.rimColor)
-          .width(this.model.circleRadius/3*2)
-          .height(this.model.circleRadius/3*2)
-          .commands(this.model.rimSvgPath)
-          .zIndex(0)
+    Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
+      Column() {
+        Stack() {
+          Path()
+            .strokeWidth(this.model.barWidth)
+            .fillOpacity(0)
+            .stroke(this.model.barColor)
+            .commands(this.model.svgPath)
+            .width(this.model.circleRadius / 3 * 2)
+            .height(this.model.circleRadius / 3 * 2)
+            .zIndex(2)
+          Path()
+            .strokeWidth(this.model.rimWidth)
+            .fillOpacity(0)
+            .stroke(this.model.rimColor)
+            .width(this.model.circleRadius / 3 * 2)
+            .height(this.model.circleRadius / 3 * 2)
+            .commands(this.model.rimSvgPath)
+            .zIndex(0)
+        }
       }
     }
   }
@@ -227,13 +228,14 @@ export class Model {
     }
   }
 
-  private calculation(): void{
+  private calculation(): void {
     // 计算弧度
     let radian = this.targetAngle * Math.PI / 180
     this.endX = this.circleRadius + (this.radius * Math.sin(radian))
     this.endY = this.circleRadius - (this.radius * Math.cos(radian))
     // 控制起点终点无限接近时正常画圆
-    if ((this.circleRadius - 1) < this.endX && this.endX < this.circleRadius && (this.circleRadius - this.endX) < 0.01) {
+    if ((this.circleRadius - 1) < this.endX && this.endX < this.circleRadius &&
+      (this.circleRadius - this.endX) < 0.01) {
       this.endX = this.circleRadius - 0.01
     }
   }
@@ -271,43 +273,43 @@ export class Model {
     return this
   }
 
-  getCircleRadius(): number{
+  getCircleRadius(): number {
     return this.circleRadius
   }
 
-  setBarColor(barColor: ResourceColor): Model{
+  setBarColor(barColor: ResourceColor): Model {
     this.barColor = barColor
     return this
   }
 
-  getBarColor(): ResourceColor{
+  getBarColor(): ResourceColor {
     return this.barColor
   }
 
-  setRimColor(rimColor: number): Model{
+  setRimColor(rimColor: number): Model {
     this.rimColor = rimColor
     return this
   }
 
-  getRimColor(): number{
+  getRimColor(): number {
     return this.rimColor
   }
 
-  setRimWidth(rimWidth: number): Model{
+  setRimWidth(rimWidth: number): Model {
     this.rimWidth = rimWidth
     return this
   }
 
-  getRimWidth(): number{
+  getRimWidth(): number {
     return this.rimWidth
   }
 
-  setBarWidth(barWidth: number): Model{
+  setBarWidth(barWidth: number): Model {
     this.barWidth = barWidth
     return this
   }
 
-  getBarWidth(): number{
+  getBarWidth(): number {
     return this.barWidth
   }
 
@@ -324,6 +326,7 @@ export class Model {
     this.mTargetProgress = mTargetProgress
     return this
   }
+
   // 获取当前的进度值
   getProgress(): string {
     return this.mProgress
@@ -339,7 +342,7 @@ export class Model {
     return this
   }
 
-  setSpinSpeed(spinSpeed: number): Model{
+  setSpinSpeed(spinSpeed: number): Model {
     this.spinSpeed = spinSpeed
     return this
   }
@@ -349,7 +352,7 @@ export class Model {
   }
 
   // Reset the count (in increment mode)
-  resetCount(): void{
+  resetCount(): void {
     this.progress = 0
     this.mTargetProgress = 0
   }
@@ -367,7 +370,7 @@ export class Model {
   }
 
   // 将进度设置为特定值，栏将立即设置为该值 @param progress 0 和 1 之间的进度
-  setInstantProgress(progress: number): void{
+  setInstantProgress(progress: number): void {
     if (this.isSpinning) {
       this.progress = 0
       this.isSpinning = false
@@ -385,7 +388,7 @@ export class Model {
     this.lastTimeAnimated = new Date().getTime()
   }
 
-  spinning(): boolean{
+  spinning(): boolean {
     return this.isSpinning
   }
 
