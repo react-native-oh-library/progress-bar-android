@@ -4,7 +4,7 @@
   "name": "@react-native-oh-tpl/progress-bar-android",
   "description": "Please describe the basic information.",
   "main": "Index.ets",
-  "version": "1.0.4-0.1.0",
+  "version": "1.0.4-0.1.1",
   "dependencies": {
     "@ohos/materialprogressbar": "^2.0.3-rc.0",
     "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
