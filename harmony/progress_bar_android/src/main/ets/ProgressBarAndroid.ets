@@ -31,8 +31,7 @@ import {
     ViewDynamicProps,
     ViewBaseProps,
     ColorSegments,
-    convertColorSegmentsToString,
-    RNScrollViewManager
+    convertColorSegmentsToString
 } from '@rnoh/react-native-openharmony'
 import  {ComWheel,Model} from './ComWheel'
 import {
