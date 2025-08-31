@@ -1,4 +1,4 @@
-# @react-native-oh-tpl/progress-bar-android
+# @react-native-ohos/progress-bar-android
 
 This project is based on [progress-bar-android](https://github.com/react-native-progress-view/progress-bar-android)
 
